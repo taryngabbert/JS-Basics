@@ -5,10 +5,10 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-function isTyler (name) {
-  if (name = "Tyler") {
+function isTyler (x) {
+  if (x === "Tyler") {
   return true;
-} else {
+} else if (x !=="Tyler"){
   return false;
   }
 }
@@ -19,10 +19,11 @@ function isTyler (name) {
 
 
   //Code Here
-function getname(name) { debugger
-  prompt("Please enter your name");
-  console.log(name);
+function getName(userName) {
+  var x = prompt("What's your name?");
+  return x;
 }
+
 
 //////////////////PROBLEM 3////////////////////
 
@@ -65,16 +66,17 @@ function welcome(name) { debugger
 //Create a function called myName that returns your name
 
   //Code Here
-function myName(name) {
-  name = "Taryn";
-  return name;
+function myName() {
+  var z= "";
+  return z;
 }
+
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-var newMyName= myName(name);
+var newMyName= myName;
 //Now alert the result of invoking newMyName
 
 alert(newMyName);
@@ -88,11 +90,13 @@ alert(newMyName);
   //Code Here
 function outerFn(name) {
   return function() {
-    return name;
+    var y = "";
+    return y;
   }
 }
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn= outerFn();
 //Now invoke innerFn.
+innerFN;
